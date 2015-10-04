@@ -1,0 +1,1 @@
+{"connect":"SFTP","host":"eng1003.eng.monash.edu","port":"22","user":"tkhen1","remoteRoot":"/var/www/html/x2s52/","privateKeyFile":""}
