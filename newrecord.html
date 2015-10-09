@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+  <title>Record page</title>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="file.css">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes" >
+    <meta name="description" content="ENG1003 Assignment 1 S2 2015">
+    <meta name="author" content="Moses Yi-Jie Wan">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" sizes="196x196" href="bubble-icon.png">
+    <link rel="apple-touch-icon-precomposed" href="bubble-icon.png">
+    <script src="record_distance.js" type="text/javascript"></script>
+</head>
+    <style>
+    .demo-layout-transparent {
+  background: url('images%20(1).jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: black;
+}
+.demo-layout-transparent .mdl-layout-title{
+    color: black;
+    font-family: monospace;
+    font-size: 40px;
+    
+}
+.demo-layout-transparent .mdl-navigation__link{
+    color: black;
+    font-family:monospace;
+    font-size: 20px;
+}
+.demo-layout-transparent .mdl-layout__content{
+    color: black;
+    font-family:monospace;
+    font-size: 20px;
+
+}
+    </style>
+     <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Do it!!</span>
+      <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        
+        <!-- Multiline Tooltip -->
+        <div id="tt4" class="icon material-icons">share</div>
+        <div class="mdl-tooltip" for="tt4">
+        Share your content<br>via social media
+        </div>
+        
+      <!-- Navigation -->
+       <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="launchpage.html">Home</a><br>
+        <a class="mdl-navigation__link" href="newrecord.html">New record</a><br>
+        <a class="mdl-navigation__link" href="index1.html">View record</a><br>
+        <a class="mdl-navigation__link" href="instructions.html">Instructions</a>
+     </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">Do it!!</span>
+      <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="launchpage.html">Home</a>
+      <a class="mdl-navigation__link" href="newrecord.html">New record</a>
+      <a class="mdl-navigation__link" href="index1.html">View record</a>
+      <a class="mdl-navigation__link" href="instructions.html">Instructions</a>
+      </nav>  
+  </div>
+    <body>
+   
+        <button id="clear" onclick = "window.location.reload()">Clear</button>
+  
+    <br>
+    <div id="status">
+        <div id="status-area">Status:None</div>
+    </div>
+    <br>
+    <section class="maparea">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <div id="map-canvas"></div>
+        
+
+        <aside>
+            <div id="timer">
+                <div id="timer-area">Time:00:00:00</div>
+            </div>
+        </aside>
+                  
+    </section>
+    <br><br>
+        <div id="empty-area"></div>
+    <div id="button row">
+    <button type="button" id="mode" onclick="chooseMode()">Mode</button>
+    <button type="button" id="start" onclick="Start()">Start</button>
+    <button type="button" id="stop" onclick="Stop()">Stop</button>
+    <button type="button" id="finish" onclick="Finish()">Finish</button>
+    </div>
+
+    
+</body>
+</html>
